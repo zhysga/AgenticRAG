@@ -50,13 +50,13 @@ class MultiLLMClient(LLM):
         # API配置
         self.api_configs = {
             "doubao": {
-                "api_key": os.environ.get("DOUBAO_API_KEY", "a34b7b1a-2660-4ba4-972f-3ebadafbf14c"),
+                "api_key": os.environ.get("DOUBAO_API_KEY", ""),
                 "base_url": "https://ark.cn-beijing.volces.com/api/v3",
                 "model": "doubao-seed-1-6-flash-250615",
                 "proxy": None
             },
             "deepseek": {
-                "api_key": os.environ.get("DEEPSEEK_API_KEY", "sk-8697d833c5804a17b5320892daa0fbde"),
+                "api_key": os.environ.get("DEEPSEEK_API_KEY", ""),
                 "base_url": "https://api.deepseek.com",
                 "model": "deepseek-chat",
                 "proxy": None
