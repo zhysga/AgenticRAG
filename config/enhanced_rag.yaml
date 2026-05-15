@@ -1,0 +1,17 @@
+# Enhanced RAG unified configuration (template)
+retrieval:
+  enable_hybrid: true
+  dense_topk: 288
+  sparse_topk: 192
+  fusion_topk: 256
+reranking:
+  enabled: true
+  model: "BAAI/bge-reranker-v2-minicpm-layerwise"
+  top_k: 6
+chunking:
+  strategy: sentence
+  chunk_size: 1024
+  chunk_overlap: 200
+vector_store:
+  type: chroma
+  persist_directory: ./storage/chroma_db
